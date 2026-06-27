@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section className="px-margin-mobile md:px-margin-desktop py-24 bg-surface-container-lowest">
-      <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+    <section className="px-margin-mobile md:px-margin-desktop py-12 md:py-24 bg-surface-container-lowest">
+      <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 items-center">
         {/* Left Side: Image container (swapped on desktop to appear first) */}
         <div className="order-2 md:order-1 relative">
           <div className="rounded-[4rem] overflow-hidden shadow-xl aspect-square w-full relative">
@@ -20,7 +20,7 @@ export default function AboutSection() {
         </div>
 
         {/* Right Side: Text & Features content */}
-        <div className="order-1 md:order-2 space-y-8">
+        <div className="order-1 md:order-2 space-y-5 md:space-y-8">
           <h2 className="font-headline-lg-mobile md:font-headline-lg text-deep-navy">
             Chemistry that <br />
             <span className="text-primary italic">Performs.</span>
@@ -28,8 +28,8 @@ export default function AboutSection() {
           <p className="font-body-lg text-on-surface-variant">
             Founded in 1992, Aditya Chemicals is a pioneer in India, established to meet the growing demand for value-based solutions in the pharmaceutical and nutrition sectors. We proudly serve as a GMP-certified chemical manufacturer and a global leader.
           </p>
-          <div className="space-y-6">
-            <div className="flex gap-4 p-6 bg-white rounded-xl shadow-sm border border-surface-container-highest">
+          <div className="space-y-4 md:space-y-6">
+            <div className="flex gap-4 p-4 md:p-6 bg-white rounded-xl shadow-sm border border-surface-container-highest">
               <span className="material-symbols-outlined text-primary text-3xl select-none">
                 verified
               </span>
@@ -40,7 +40,7 @@ export default function AboutSection() {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4 p-6 bg-white rounded-xl shadow-sm border border-surface-container-highest">
+            <div className="flex gap-4 p-4 md:p-6 bg-white rounded-xl shadow-sm border border-surface-container-highest">
               <span className="material-symbols-outlined text-primary text-3xl select-none">
                 science
               </span>

@@ -3,9 +3,9 @@ import { marketSectors } from "@/data/markets";
 
 export default function MarketsBento() {
   return (
-    <section className="px-margin-mobile md:px-margin-desktop py-24 bg-background">
+    <section className="px-margin-mobile md:px-margin-desktop py-12 md:py-24 bg-background">
       <div className="max-w-container-max mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 md:mb-16">
           <div className="space-y-4">
             <h2 className="font-headline-lg-mobile md:font-headline-lg text-deep-navy">
               Core Industry <span className="text-primary italic">Markets</span>
@@ -15,7 +15,7 @@ export default function MarketsBento() {
             </p>
           </div>
           <Link href="/products">
-            <button className="px-8 py-3 border border-primary text-primary rounded-full font-button text-button uppercase hover:bg-primary/5 transition-all cursor-pointer">
+            <button className="px-6 py-2.5 md:px-8 md:py-3 border border-primary text-primary rounded-full font-button text-button uppercase hover:bg-primary/5 transition-all cursor-pointer">
               Explore All Products
             </button>
           </Link>
@@ -27,7 +27,7 @@ export default function MarketsBento() {
               return (
                 <div
                   key={sector.slug}
-                  className={`bento-card rounded-xl p-10 shadow-xl relative overflow-hidden flex items-center col-span-1 ${sector.accentClass}`}
+                  className={`bento-card rounded-xl p-6 md:p-10 shadow-xl relative overflow-hidden flex items-center col-span-1 ${sector.accentClass}`}
                 >
                   <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
                     <div>
@@ -36,7 +36,7 @@ export default function MarketsBento() {
                     </div>
                     <div className="flex justify-start md:justify-end">
                       <Link href="/contact">
-                        <button className="px-8 py-4 bg-white text-primary rounded-full font-button text-button uppercase shadow-lg hover:scale-95 transition-all cursor-pointer">
+                        <button className="px-6 py-3 md:px-8 md:py-4 bg-white text-primary rounded-full font-button text-button uppercase shadow-lg hover:scale-95 transition-all cursor-pointer">
                           {sector.linkText}
                         </button>
                       </Link>
@@ -51,7 +51,7 @@ export default function MarketsBento() {
             return (
               <div
                 key={sector.slug}
-                className={`bento-card rounded-xl p-10 border shadow-sm relative overflow-hidden flex flex-col justify-between min-h-[400px] col-span-1 ${sector.accentClass}`}
+                className={`bento-card rounded-xl p-6 md:p-10 border shadow-sm relative overflow-hidden flex flex-col justify-between min-h-[360px] md:min-h-[400px] col-span-1 ${sector.accentClass}`}
               >
                 <div className="relative z-10 max-w-md">
                   <div

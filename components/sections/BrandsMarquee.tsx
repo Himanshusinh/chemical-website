@@ -28,26 +28,26 @@ const row2 = [
 
 export default function BrandsMarquee() {
   return (
-    <section className="py-16 overflow-hidden bg-background">
+    <section className="py-8 md:py-16 overflow-hidden bg-background">
       {/* Stats Banner Block */}
-      <div className="w-[90%] max-w-container-max mx-auto bg-primary py-12 px-8 text-white rounded-[2rem] mb-16 shadow-lg">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-center">
-          <div className="space-y-2">
-            <p className="text-5xl font-extrabold tracking-tight font-headline-md">75+</p>
-            <p className="text-xs md:text-sm font-semibold uppercase tracking-wider text-white/85">No. Of Products</p>
+      <div className="w-[95%] max-w-container-max mx-auto bg-primary py-6 md:py-12 px-3 md:px-8 text-white rounded-[1.5rem] md:rounded-[2rem] mb-8 md:mb-16 shadow-lg">
+        <div className="grid grid-cols-3 gap-1 md:gap-8 text-center items-center">
+          <div className="space-y-1 md:space-y-2">
+            <p className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight font-headline-md">75+</p>
+            <p className="text-[9px] sm:text-[11px] md:text-sm font-semibold uppercase tracking-wider text-white/80 leading-snug">No. Of Products</p>
           </div>
-          <div className="space-y-2 md:border-x border-white/20 py-6 md:py-0">
-            <p className="text-5xl font-extrabold tracking-tight font-headline-md">10+</p>
-            <p className="text-xs md:text-sm font-semibold uppercase tracking-wider text-white/85">Operational Countries</p>
+          <div className="space-y-1 md:space-y-2 border-x border-white/15 px-1 md:px-4">
+            <p className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight font-headline-md">10+</p>
+            <p className="text-[9px] sm:text-[11px] md:text-sm font-semibold uppercase tracking-wider text-white/80 leading-snug">Operational Countries</p>
           </div>
-          <div className="space-y-2">
-            <p className="text-5xl font-extrabold tracking-tight font-headline-md">30+</p>
-            <p className="text-xs md:text-sm font-semibold uppercase tracking-wider text-white/85">Years Of Experience</p>
+          <div className="space-y-1 md:space-y-2">
+            <p className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight font-headline-md">30+</p>
+            <p className="text-[9px] sm:text-[11px] md:text-sm font-semibold uppercase tracking-wider text-white/80 leading-snug">Years Of Experience</p>
           </div>
         </div>
       </div>
 
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-8 text-center">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-6 md:mb-8 text-center">
         <h2 className="text-xs font-label-caps tracking-[0.2em] text-primary font-bold">
           Trusted Collaboration Partnerships
         </h2>

@@ -20,8 +20,8 @@ const featuredProducts = [
 
 export default function ProductsMarquee() {
   return (
-    <section className="py-16 bg-white overflow-hidden">
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-10 text-center space-y-3">
+    <section className="py-8 md:py-16 bg-white overflow-hidden">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-6 md:mb-10 text-center space-y-3">
         <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-semibold select-none uppercase tracking-wider">
           Compound Catalog
         </span>

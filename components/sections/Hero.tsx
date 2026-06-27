@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative px-margin-mobile md:px-margin-desktop py-12 md:py-24 overflow-hidden">
-      <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <div className="relative z-10 space-y-8">
+    <section className="relative px-margin-mobile md:px-margin-desktop py-8 md:py-24 overflow-hidden">
+      <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div className="relative z-10 space-y-5 md:space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-container/10 text-primary rounded-full font-label-caps uppercase text-[10px] md:text-xs">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
             Powering Purity for Over 30 Years
@@ -18,14 +18,14 @@ export default function Hero() {
           <p className="font-body-lg text-on-surface-variant max-w-xl">
             Recognized among the top API manufacturing companies globally, delivering pharmaceutical and nutrition excellence since 1992. We build the chemistry that performs.
           </p>
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex flex-wrap gap-4 pt-2">
             <Link href="/contact">
-              <button className="px-10 py-5 bg-vibrant-azure text-white rounded-full font-button text-button uppercase shadow-xl hover:scale-95 transition-all cursor-pointer">
+              <button className="px-6 py-3.5 md:px-10 md:py-5 bg-vibrant-azure text-white rounded-full font-button text-button uppercase shadow-xl hover:scale-95 transition-all cursor-pointer">
                 Let&apos;s Connect
               </button>
             </Link>
             <Link href="/products">
-              <button className="px-10 py-5 border-2 border-primary-fixed text-primary rounded-full font-button text-button uppercase hover:bg-primary-fixed/20 transition-all flex items-center gap-2 cursor-pointer">
+              <button className="px-6 py-3.5 md:px-10 md:py-5 border-2 border-primary-fixed text-primary rounded-full font-button text-button uppercase hover:bg-primary-fixed/20 transition-all flex items-center gap-2 cursor-pointer">
                 Our Products
                 <span className="material-symbols-outlined">arrow_forward</span>
               </button>
