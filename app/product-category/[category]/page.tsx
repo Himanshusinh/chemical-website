@@ -87,7 +87,7 @@ export default async function CategoryPage({ params }: PageProps) {
         {/* Level 2 Grid Sections */}
         {isMineralsParent ? (
           /* Minerals parent view: list subcategories */
-          <div data-bg-color="#ffffff" className="space-y-6 bg-white rounded-3xl p-8 shadow-sm border border-surface-container-highest">
+          <div data-bg-color="#ffffff" className="space-y-6 md:bg-white md:rounded-3xl p-0 md:p-8 md:shadow-sm md:border md:border-surface-container-highest">
             <h2 className="text-2xl font-bold text-deep-navy border-b border-surface-container-highest pb-2 select-none uppercase tracking-wider">
               Mineral Sub-categories
             </h2>
@@ -123,7 +123,7 @@ export default async function CategoryPage({ params }: PageProps) {
           </div>
         ) : (
           /* Product listing view */
-          <div data-bg-color="#ffffff" className="space-y-6 bg-white rounded-3xl p-8 shadow-sm border border-surface-container-highest">
+          <div data-bg-color="#ffffff" className="space-y-6 md:bg-white md:rounded-3xl p-0 md:p-8 md:shadow-sm md:border md:border-surface-container-highest">
             <h2 className="text-2xl font-bold text-deep-navy border-b border-surface-container-highest pb-2 select-none uppercase tracking-wider">
               Available Compounds ({categoryProducts.length})
             </h2>
