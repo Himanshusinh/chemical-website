@@ -14,7 +14,7 @@ export default function AboutPage() {
       <ScrollBackground />
 
       {/* Hero Section */}
-      <div data-bg-color="#faf8ff" className="py-20 px-margin-mobile md:px-margin-desktop">
+      <div data-bg-color="#faf8ff" className="py-10 md:py-20 px-margin-mobile md:px-margin-desktop">
         <div className="max-w-container-max mx-auto space-y-6 text-center md:text-left">
           <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-xs font-label-caps uppercase select-none">
             Established 1992
@@ -29,8 +29,8 @@ export default function AboutPage() {
       </div>
 
       {/* Overview Section */}
-      <div data-bg-color="#ffffff" className="py-24 px-margin-mobile md:px-margin-desktop border-t border-surface-container-highest bg-white">
-        <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div data-bg-color="#ffffff" className="py-12 md:py-24 px-margin-mobile md:px-margin-desktop border-t border-surface-container-highest bg-white">
+        <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
             <h2 className="font-headline-md text-deep-navy font-bold">Company Overview</h2>
             <div className="space-y-6 font-body-md text-on-surface-variant leading-relaxed">
@@ -56,10 +56,10 @@ export default function AboutPage() {
       </div>
 
       {/* Mission & Vision Section */}
-      <div data-bg-color="#eef2ff" className="py-24 px-margin-mobile md:px-margin-desktop">
+      <div data-bg-color="#eef2ff" className="py-12 md:py-24 px-margin-mobile md:px-margin-desktop">
         <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-bento-gap">
           {/* Mission Card */}
-          <div className="bg-white p-10 rounded-xl border border-surface-container-highest shadow-sm space-y-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
+          <div className="bg-white p-6 md:p-10 rounded-xl border border-surface-container-highest shadow-sm space-y-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
             <div className="space-y-4">
               <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                 <span className="material-symbols-outlined text-2xl select-none">my_location</span>
@@ -72,7 +72,7 @@ export default function AboutPage() {
           </div>
 
           {/* Vision Card */}
-          <div className="bg-deep-navy text-white p-10 rounded-xl shadow-xl space-y-6 flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
+          <div className="bg-deep-navy text-white p-6 md:p-10 rounded-xl shadow-xl space-y-6 flex flex-col justify-between hover:scale-[1.01] transition-transform duration-300">
             <div className="space-y-4">
               <div className="w-12 h-12 rounded-lg bg-white/10 text-primary-fixed flex items-center justify-center">
                 <span className="material-symbols-outlined text-2xl select-none">visibility</span>
@@ -87,8 +87,8 @@ export default function AboutPage() {
       </div>
 
       {/* Global Presence Section */}
-      <div data-bg-color="#ffffff" className="py-24 px-margin-mobile md:px-margin-desktop bg-white">
-        <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div data-bg-color="#ffffff" className="py-12 md:py-24 px-margin-mobile md:px-margin-desktop bg-white">
+        <div className="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
           <div className="lg:col-span-5 order-last lg:order-first relative w-full h-[400px] md:h-[500px]">
             <Image
               src="/aditya chemicals images/home page/home page images/magnific_indian-pharmaceutical-inn_SOF3pgDUb8.png"
@@ -113,12 +113,12 @@ export default function AboutPage() {
       </div>
 
       {/* CTA Section */}
-      <div data-bg-color="#faf8ff" className="py-20 px-margin-mobile md:px-margin-desktop">
-        <div className="max-w-container-max mx-auto bg-deep-navy text-white rounded-[3rem] p-10 md:p-16 relative overflow-hidden shadow-2xl text-center md:text-left">
+      <div data-bg-color="#faf8ff" className="py-10 md:py-20 px-margin-mobile md:px-margin-desktop">
+        <div className="max-w-container-max mx-auto bg-deep-navy text-white rounded-[2rem] p-8 md:p-16 relative overflow-hidden shadow-2xl text-center md:text-left">
           <div className="absolute inset-0 opacity-10 pointer-events-none select-none">
             <div className="absolute top-0 right-0 w-96 h-96 bg-primary-container rounded-full blur-[100px]"></div>
           </div>
-          <div className="relative z-10 max-w-4xl space-y-8">
+          <div className="relative z-10 max-w-4xl space-y-5 md:space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold font-headline-md tracking-tight leading-tight">
               Looking to Collaborate?
             </h2>
@@ -127,12 +127,12 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
               <Link href="/contact">
-                <button className="px-8 py-4 bg-primary text-white rounded-full font-button text-button uppercase hover:scale-[0.98] transition-all duration-250 shadow-lg cursor-pointer tracking-wider font-bold">
+                <button className="px-6 py-3 md:px-8 md:py-4 bg-primary text-white rounded-full font-button text-button uppercase hover:scale-[0.98] transition-all duration-250 shadow-lg cursor-pointer tracking-wider font-bold">
                   Contact Us
                 </button>
               </Link>
               <Link href="/contact?request=brochure">
-                <button className="px-8 py-4 border border-white/20 text-white rounded-full font-button text-button uppercase hover:bg-white/5 transition-all cursor-pointer">
+                <button className="px-6 py-3 md:px-8 md:py-4 border border-white/20 text-white rounded-full font-button text-button uppercase hover:bg-white/5 transition-all cursor-pointer">
                   Request Brochure
                 </button>
               </Link>
