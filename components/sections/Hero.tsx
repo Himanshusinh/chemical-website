@@ -33,9 +33,9 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mt-8 lg:mt-0">
-          {/* Lab image with curved mask - aspect changed to [4/3] to reduce height and fit viewport */}
-          <div className="relative z-0 rounded-[3rem] overflow-hidden shadow-2xl aspect-[4/3] w-full max-w-[480px] mx-auto lg:ml-auto">
+        <div className="relative mt-8 lg:mt-0 w-full max-w-[520px] mx-auto lg:ml-auto">
+          {/* Main Card (Back) */}
+          <div className="w-[85%] ml-auto relative z-0 rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3] border border-glass-stroke">
             <Image
               alt="Hyper-realistic lab environment"
               src="/aditya chemicals images/home page/home page images/magnific_massive-pharmaceutical-ma_mCc5jr4hJQ.png"
@@ -47,22 +47,33 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-t from-deep-navy/40 to-transparent"></div>
           </div>
 
+          {/* Secondary Overlapping Card (Front) */}
+          <div className="absolute -bottom-8 left-0 w-[42%] aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white z-10 hidden sm:block">
+            <Image
+              alt="Chemical crystallization close up"
+              src="/aditya chemicals images/home page/home page images/magnific_indian-pharmaceutical-res_Pi1noj542C (1).png"
+              fill
+              sizes="200px"
+              className="object-cover"
+            />
+          </div>
+
           {/* Floating Data Badges */}
-          <div className="absolute -left-4 md:-left-8 top-[10%] animate-float z-20">
+          <div className="absolute -left-6 top-[15%] animate-float z-20">
             <div className="bg-white/90 backdrop-blur shadow-xl p-3 md:p-4 rounded-xl border border-surface-container-highest">
               <p className="text-primary font-bold text-2xl md:text-3xl leading-none">41+</p>
               <p className="text-on-surface-variant font-label-caps uppercase text-[9px] md:text-[10px] mt-1">Products</p>
             </div>
           </div>
 
-          <div className="absolute -right-4 bottom-[20%] animate-float z-20" style={{ animationDelay: "-2s" }}>
+          <div className="absolute -right-6 bottom-[25%] animate-float z-20" style={{ animationDelay: "-2s" }}>
             <div className="bg-white/90 backdrop-blur shadow-xl p-3 md:p-4 rounded-xl border border-surface-container-highest">
               <p className="text-primary font-bold text-2xl md:text-3xl leading-none">10+</p>
               <p className="text-on-surface-variant font-label-caps uppercase text-[9px] md:text-[10px] mt-1">Countries</p>
             </div>
           </div>
 
-          <div className="absolute left-1/4 -bottom-4 animate-float z-20" style={{ animationDelay: "-4s" }}>
+          <div className="absolute left-[30%] -bottom-6 animate-float z-20" style={{ animationDelay: "-4s" }}>
             <div className="bg-white/90 backdrop-blur shadow-xl p-3 md:p-4 rounded-xl border border-surface-container-highest">
               <p className="text-primary font-bold text-2xl md:text-3xl leading-none">30+</p>
               <p className="text-on-surface-variant font-label-caps uppercase text-[9px] md:text-[10px] mt-1">Years Experience</p>
