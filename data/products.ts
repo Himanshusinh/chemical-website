@@ -429,7 +429,7 @@ export const products: Product[] = [
     categoryTag: "Potassium (Chelated Minerals)",
     parentCategorySlug: "minerals",
     subCategorySlug: "potassium",
-    imagePath: "/aditya chemicals images/Potassium/product card/Potassium Citrate.png"
+    imagePath: "/aditya chemicals images/Chelated Minerals/product cads/Potassium.png"
   },
   {
     name: "Zinc Lactate",
@@ -473,7 +473,7 @@ export const products: Product[] = [
     casNumber: "130-40-5",
     categoryTag: "Vitamins & Derivatives",
     parentCategorySlug: "vitamins-derivatives",
-    imagePath: "/aditya chemicals images/Vitamins & derivatives/product card/Riboflavin Sodium 5'Phosphate.png"
+    imagePath: "/aditya chemicals images/Vitamins & derivatives/product card/Riboflavin Sodium 5' Phosphate.png"
   },
   {
     name: "Riboflavin",

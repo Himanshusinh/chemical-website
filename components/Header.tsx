@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { headerNavItems } from "@/data/navigation";
 
@@ -21,25 +22,14 @@ export default function Header() {
       {/* Brand Logo */}
       <div className="flex items-center gap-2">
         <Link href="/" className="flex items-center gap-3">
-          <svg
-            width="44"
-            height="24"
-            viewBox="0 0 44 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="text-primary fill-current"
-          >
-            {/* Bottom base bar */}
-            <rect x="0" y="20" width="44" height="3" rx="1" />
-            {/* Outer sloped block */}
-            <path d="M4 18H40L34 6H10L4 18Z" />
-            {/* Inner triangular cutout */}
-            <path d="M15 18H29L22 11L15 18Z" fill="white" />
-          </svg>
-          <span className="font-headline-md text-xl tracking-tight select-none">
-            <span className="font-extrabold text-primary">Aditya</span>{" "}
-            <span className="font-normal text-on-surface">Chemicals</span>
-          </span>
+          <Image
+            src="/logo.jpg"
+            alt="Aditya Chemicals"
+            title="Aditya Chemicals"
+            width={160}
+            height={44}
+            className="h-10 w-auto object-contain rounded bg-white p-1"
+          />
         </Link>
       </div>
 
@@ -52,11 +42,10 @@ export default function Header() {
               <div key={item.name} className="relative group py-2">
                 <Link
                   href={item.href}
-                  className={`font-button text-button uppercase transition-all duration-300 pb-1 text-sm flex items-center gap-1 ${
-                    isActive
-                      ? "text-primary border-b-2 border-primary"
-                      : "text-on-surface-variant hover:text-primary"
-                  }`}
+                  className={`font-button text-button uppercase transition-all duration-300 pb-1 text-sm flex items-center gap-1 ${isActive
+                    ? "text-primary border-b-2 border-primary"
+                    : "text-on-surface-variant hover:text-primary"
+                    }`}
                 >
                   {item.name}
                   <span className="material-symbols-outlined text-base select-none transition-transform duration-200 group-hover:rotate-180">
@@ -126,9 +115,8 @@ export default function Header() {
                   <Link
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className={`font-button text-button uppercase transition-all duration-300 py-2 ${
-                      isActive ? "text-primary font-bold" : "text-on-surface-variant hover:text-primary"
-                    }`}
+                    className={`font-button text-button uppercase transition-all duration-300 py-2 ${isActive ? "text-primary font-bold" : "text-on-surface-variant hover:text-primary"
+                      }`}
                   >
                     {item.name}
                   </Link>

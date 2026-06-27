@@ -1,9 +1,12 @@
 import Hero from "@/components/sections/Hero";
 import AboutSection from "@/components/sections/AboutSection";
+import ProductsMarquee from "@/components/sections/ProductsMarquee";
 import MarketsBento from "@/components/sections/MarketsBento";
 import Innovation from "@/components/sections/Innovation";
+import BrandsMarquee from "@/components/sections/BrandsMarquee";
 import CTASection from "@/components/sections/CTASection";
 import ScrollBackground from "@/components/ScrollBackground";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
@@ -17,19 +20,39 @@ export default function Home() {
       </div>
 
       <div data-bg-color="#ffffff">
-        <AboutSection />
-      </div>
-
-      <div data-bg-color="#eef2ff">
-        <MarketsBento />
-      </div>
-
-      <div data-bg-color="#f2f3ff">
-        <Innovation />
+        <ScrollReveal>
+          <ProductsMarquee />
+        </ScrollReveal>
       </div>
 
       <div data-bg-color="#faf8ff">
-        <CTASection />
+        <ScrollReveal>
+          <AboutSection />
+        </ScrollReveal>
+      </div>
+
+      <div data-bg-color="#eef2ff">
+        <ScrollReveal>
+          <MarketsBento />
+        </ScrollReveal>
+      </div>
+
+      <div data-bg-color="#f2f3ff">
+        <ScrollReveal>
+          <Innovation />
+        </ScrollReveal>
+      </div>
+
+      <div data-bg-color="#ffffff">
+        <ScrollReveal>
+          <BrandsMarquee />
+        </ScrollReveal>
+      </div>
+
+      <div data-bg-color="#faf8ff">
+        <ScrollReveal>
+          <CTASection />
+        </ScrollReveal>
       </div>
     </>
   );

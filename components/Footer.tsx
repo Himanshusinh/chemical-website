@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { footerLinks } from "@/data/navigation";
 
 export default function Footer() {
@@ -6,29 +7,18 @@ export default function Footer() {
     <footer className="w-full py-16 px-gutter md:px-margin-desktop bg-deep-navy text-white text-sm mt-12 rounded-t-[2.5rem]">
       {/* 5-Column Grid */}
       <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-bento-gap">
-        
+
         {/* Column 1: Brand Logo & Intro */}
         <div className="space-y-6 md:col-span-2 lg:col-span-1">
           <Link href="/" className="flex items-center gap-3">
-            <svg
-              width="44"
-              height="24"
-              viewBox="0 0 44 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-primary-fixed fill-current"
-            >
-              {/* Bottom base bar */}
-              <rect x="0" y="20" width="44" height="3" rx="1" />
-              {/* Outer sloped block */}
-              <path d="M4 18H40L34 6H10L4 18Z" />
-              {/* Inner triangular cutout - matched to footer background */}
-              <path d="M15 18H29L22 11L15 18Z" fill="#0a192f" />
-            </svg>
-            <span className="font-headline-md text-xl tracking-tight select-none">
-              <span className="font-extrabold text-primary-fixed">Aditya</span>{" "}
-              <span className="font-normal text-white">Chemicals</span>
-            </span>
+            <Image
+              src="/logo.jpg"
+              alt="Aditya Chemicals"
+              title="Aditya Chemicals"
+              width={180}
+              height={50}
+              className="h-12 w-auto object-contain rounded bg-white p-1"
+            />
           </Link>
           <p className="text-surface-variant/85 text-xs leading-relaxed max-w-[280px]">
             Aditya Chemicals welcomes your interest in its products, quality, and solutions. Please feel free to contact us by the method of your choice.
