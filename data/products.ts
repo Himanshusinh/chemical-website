@@ -38,7 +38,7 @@ export const productCategories: Category[] = [
     parentCategorySlug: "minerals",
     description: "Premium bioavailable Calcium mineral chelates and salts.",
     bannerPath: "/aditya chemicals images/Calcium/Calcium Category Hero Banner.png",
-    cardImagePath: "/aditya chemicals images/Chelated Minerals/product cads/calcium.png"
+    cardImagePath: "/aditya chemicals images/Chelated Minerals/product cads/Calcium.png"
   },
   {
     slug: "copper",
@@ -46,7 +46,7 @@ export const productCategories: Category[] = [
     parentCategorySlug: "minerals",
     description: "Premium bioavailable Copper mineral chelates and salts.",
     bannerPath: "/aditya chemicals images/Copper/Copper Category Hero Banner.png",
-    cardImagePath: "/aditya chemicals images/Chelated Minerals/product cads/copper.png"
+    cardImagePath: "/aditya chemicals images/Chelated Minerals/product cads/Copper.png"
   },
   {
     slug: "ferrous",
@@ -70,7 +70,7 @@ export const productCategories: Category[] = [
     parentCategorySlug: "minerals",
     description: "Premium bioavailable Manganese mineral chelates and salts.",
     bannerPath: "/aditya chemicals images/Manganese/Manganese Category Hero Banner.png",
-    cardImagePath: "/aditya chemicals images/Chelated Minerals/product cads/manganese.png"
+    cardImagePath: "/aditya chemicals images/Chelated Minerals/product cads/Manganese.png"
   },
   {
     slug: "potassium",
@@ -78,7 +78,7 @@ export const productCategories: Category[] = [
     parentCategorySlug: "minerals",
     description: "Premium bioavailable Potassium mineral chelates and salts.",
     bannerPath: "/aditya chemicals images/Potassium/Potassium Category Hero Banner.png",
-    cardImagePath: "/aditya chemicals images/Chelated Minerals/product cads/potassium.png"
+    cardImagePath: "/aditya chemicals images/Chelated Minerals/product cads/Potassium.png"
   },
   {
     slug: "zinc",
